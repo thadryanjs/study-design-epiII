@@ -1,0 +1,42 @@
+---
+title: "Scientific Question (Assn. 1)"
+---
+
+Study Design Assignment 1: Matching your scientific question to the best study design and preventing information bias. Provide a concise but complete response (At least 2, but not more than 4 pages) to the following questions.
+
+## Describe 3 scientific questions/hypotheses that you would be interested in investigating through an epidemiologic study. One or two sentences for each question is sufficient.
+ 
+a.
+b.
+c.
+
+## Choose one of the scientific questions that you have proposed above and answer the following questions. (Though you may change your study question later)
+
+a. What is your conceptual exposure? Is this exposure rare or common?
+b. What is your conceptual outcome? Is this outcome rare or common?
+c. Briefly describe how you might use each of the four major study designs in epidemiology (cohort, case-control, cross-sectional (or ecologic if you like), or randomized trial) to assess this question. For purposes of this exercise, I’d like you to stretch your ideas about study design, so do your best to come up with a way to use every one of the study designs to address your question of interest. Feel free to be a bit creative for this part of the question (you will assess feasibility and logistics in the next part of the question).
+
+## Focus in on what is pragmatic or logistically possible to answer the following questions about your scientific question and study design.
+
+a. Which study design from part 2c seems most feasible? Why does this design seem
+best for addressing your scientific question?
+
+b. What will you use as your operational exposure and outcome? Or what are some
+reasonable options for operational exposure and outcome? Note that this should
+match up to the study design you’ve identified as most feasible in 3a.
+ 
+c. What other data will you need to collect for you study (i.e., what are the important
+covariates for your study)?
+
+## Place your chosen question into the broader context of the existing literature.
+
+a. Identify 2-4 relevant papers from the primary literature to provide background and
+motivation for your proposed study. Provide the citations and a 1-2 sentence
+summary of the critical background information contained in each study.
+ 
+b. What knowledge gap does your proposed study address? (i.e., Will it add to our
+scientific knowledge by answering a completely new question? Will it help us
+understand a new mechanism to explain a previously observed association? Will it
+extend the research to a new population?)
+
+## Are there any relevant sources of information bias to consider for your study as designed (consider all potential types of information bias)? How might you prevent these or improve exposure/outcome/covariate data collection to minimize these concerns?

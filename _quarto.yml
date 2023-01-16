@@ -1,0 +1,25 @@
+project:
+  type: book
+
+toc-depth: 2
+number-depth: 1
+
+book:
+  title: "Study Design"
+  subtitle: "An epidemiology study design project"
+  author: "Thadryan J. Sweeney"
+  date: "1/16/2023"
+  chapters:
+    - index.qmd
+    - 0-assignment1.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: darkly 
+  pdf:
+    documentclass: scrreprt
+
+
+
