@@ -6,15 +6,33 @@ Study Design Assignment 1: Matching your scientific question to the best study d
 
 ## Describe 3 scientific questions/hypotheses that you would be interested in investigating through an epidemiologic study. One or two sentences for each question is sufficient.
  
-a.
-b.
-c.
+a. Do mobile treatment units for Methadone increase the access to care for people with OUD? This might be hard to asses but I think it's worth coming up with something because it's really the core of effort to get better treatment to more people. Sub-question: does this results in fewer adverse events?
+
+b. Do mobile treatment units change the demographics of people receiving methadone? The demographics of the opioid epidemic are complex and have shifted since it began with working class in whites in deindustrialized areas making up the majority of cases and other groups becoming more involved more over time. Monitoring for demographic shifts could help asses if the programs were helping in a fair way.
+
+c. Do mobile treatment units results in fewer cases of COVID among people with OUD? One think worth interrogating is if switching to the vans would help at all. If not, it might make sense to divert resources back to the initial clinics. If it reduces infections, it could serve as a treatment model for other diseases.
 
 ## Choose one of the scientific questions that you have proposed above and answer the following questions. (Though you may change your study question later)
 
 a. What is your conceptual exposure? Is this exposure rare or common?
+
+My exposure is opioid use disorder in a region where MTUs are being explored as a potential treatment delivery system. It's rare compared to something like cardiovascular disease, and I don't think it's greater than 20% of the population (the rough rule we're using for this class) [double check]. It is increasingly common however, having become the leading cause of accidental death [find where I read this].
+
+
 b. What is your conceptual outcome? Is this outcome rare or common?
+
+The outcome would be receiving medication-based treatment for opioid use disorder via a MTU (let's say, >10% of the time)[workshop this].
+
 c. Briefly describe how you might use each of the four major study designs in epidemiology (cohort, case-control, cross-sectional (or ecologic if you like), or randomized trial) to assess this question. For purposes of this exercise, I’d like you to stretch your ideas about study design, so do your best to come up with a way to use every one of the study designs to address your question of interest. Feel free to be a bit creative for this part of the question (you will assess feasibility and logistics in the next part of the question).
+
+    - Cohort: In this design, we could enroll people based on their opioid use disorder status and the policy of the closets methadone clinic (if they use vans or not). After the enrollment, we would follow them for a designated period. We could then asses a variety of metrics like adherence, overdoses, or death. The main one would be adherence, defined as people who reported to the van. We could then compare this to the rates in the people who didn't have the van option. This would be the prospective option. For the retrospective version, we could attempt to find data on overdoses, demographics, etc from historical database. We could then see if people in the MTU regions different in terms of endpoints.
+
+    - Case control: This ones stretches my proposal quite a bit. I need to think on it [return to this]. In this we would need to define a different endpoint, let's say overdose. We could enroll people in a non-MTU region as controls and a MTU region as cases. We could follow them and see if they different on our endpoints. OUD is likely uncommon enough that odds ratio would approximate the risk.
+
+    - Cross-sectional: In this method, we might obtain interview or medical records. We would asses the desired information on demographics and outcomes. We could review the records to see if subjects had an overdose, etc. The advantage here is that it's the cheapest and fastest. The downside is that we wouldn't have continuity in terms of time and would have very little control over confounding.
+
+    - Randomized trial: In this version of the study we would randomly assign people to treatment regions where MTUs were available and some to those where they weren't. This would be extremely difficult logistically because the point of the MTUs is to address access, and assigning people to facilities other than the closest one would be prohibitive. Perhaps it would be possible to assign the MTU programs randomly as pilot programs instead of using the places where it was already in use. 
+
 
 ## Focus in on what is pragmatic or logistically possible to answer the following questions about your scientific question and study design.
 
