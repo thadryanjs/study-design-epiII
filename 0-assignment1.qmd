@@ -96,4 +96,3 @@ If we were to pursue a cohort study, we might have issues if people having movin
 ### Misclassification of exposure or outcome 
 
 This could manifest in terms of counting overdoses. Someone could take a dangerous amount of a substance and not die but not report to a hospital. This "close call" should, in theory, constitute an overdose in terms of risky behavior, but would not appear on a medical record. This is exactly the kind of thing that gets underestimated in epidemiological studies. Correcting it sully is likely impossible. We could probably not change it but we could consider the effect it would have when interpreting the results. For example, this effect often biases towards the null. 
-
