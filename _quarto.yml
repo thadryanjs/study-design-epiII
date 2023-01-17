@@ -3,8 +3,8 @@ project:
 
 csl: style.csl
 
-toc-depth: 2
-number-depth: 1
+# toc-depth: 2
+# number-depth: 1
 
 book:
   title: "Mobile treatment units for medication-based treatments of Opioid Use Disorder"
