@@ -1,6 +1,8 @@
 project:
   type: book
 
+csl: style.csl
+
 toc-depth: 2
 number-depth: 1
 
@@ -12,6 +14,7 @@ book:
   chapters:
     - index.qmd
     - 0-assignment1.qmd
+    - references.qmd
 
 bibliography: references.bib
 
