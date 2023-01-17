@@ -76,3 +76,24 @@ extend the research to a new population?)
 My proposed study would asses the demographics of those who seek medication-based treatment for OUD in a mobile setting. This would offer insights into what communities benefit the most, if there is a disparity. This would highlight needs for future work. If the vans are broadly effective and demographics do not show a disparity, it would confirm their value. It could also interrogate the utility in improving outcomes. The demographics would be a new contribution as would the outcomes. The benefit of medication assisted treatment in general is well established and would not be a contribution.
 
 ## Are there any relevant sources of information bias to consider for your study as designed (consider all potential types of information bias)? How might you prevent these or improve exposure/outcome/covariate data collection to minimize these concerns?
+
+There are numerous ways this study could be impacted by information bias.
+
+### Recall Bias
+
+If we were to pursue the cross-sectional version of the study this would likely be a large issue. Given that opioids influence the mind there might be issues in recalling if, when, and how many non-fatal overdoses occurred. We could restrict to participants with medical records going back a certain amount of time to help with this.
+
+### Interviewer Bias
+
+The interviewer bias would be more likely if we chose the cross-sectional version of the study. In this situation an interviewer might be more likely to assume people with certain traits are more likely to be drug uses and ask leading questions accordingly ("Are you sure there weren't more?", etc). We could address this by automating simple interviews (ie, using some kind of survey tool).
+
+
+### Loss to follow up
+
+If we were to pursue a cohort study, we might have issues if people having moving or transferring care facilities. In particular, given that housing instability is likely higher among people who use drugs, it could be hard to follow up with people with no permanent address. Given that opioid use is criminalized, people could be arrested before the study is complete. I think this would be one of the biggest threats to the study in practice if we did the cohort version. We might be able to ameliorate the address by only enrolling people with a legal address though this would cost us in terms of generalizability. In terms of the legal issues there isn't a lot we could do.
+
+
+### Misclassification of exposure or outcome 
+
+This could manifest in terms of counting overdoses. Someone could take a dangerous amount of a substance and not die but not report to a hospital. This "close call" should, in theory, constitute an overdose in terms of risky behavior, but would not appear on a medical record. This is exactly the kind of thing that gets underestimated in epidemiological studies. Correcting it sully is likely impossible. We could probably not change it but we could consider the effect it would have when interpreting the results. For example, this effect often biases towards the null. 
+
