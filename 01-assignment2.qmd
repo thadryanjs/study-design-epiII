@@ -1,0 +1,36 @@
+---
+title: "Confounding (Assn. 2)"
+---
+
+Study Design Assignment #2: Creating a strategy for the control of confounding 
+
+Provide a concise but complete response (1-2 pages) to the following questions.  
+
+## Re-state your study question and chosen study design. (If you’ve decided to change your study question or design, please make a note of this in your write-up)
+
+I am interested in assessing the effect of mobile treatment units for methadone treatment of opioid use disorder. In particular I'm interested in seeing if there are fewer adverse events when they are utilized (death, hospitalization, overdoses). Lastly I am interested in noting any demographic shifts in the people getting treatment when they are used as people in rural areas are not always able to make it to more centralized urban clinics. This could inform holistic treatment policies in that knowing, for example, rural and urban populations get treatment differently.
+
+## Based on the papers that you reviewed for Questions 3 & 4 in Exercise 1, list the important potential confounders of your exposure-outcome association. Will any of these be particularly challenging to measure?
+
+```{r}
+
+
+
+```
+
+
+
+
+
+## How might you integrate prevention or control of confounding into your study design or analysis?
+
+I think for my study it makes sense to focus on controlling in a multivariate analysis. I don't want to rely too heavily on restriction because I'd like to generalize to more than one region or population. That said, I'd do if it there turned out to be a reason to. For instance, if I were to find that there were a lot of clinics in the cities it might might make sense to limit to rural areas as the need was already met.
+
+## Based on your answers in part 3 and 4 of Study Design Assignment 1, create a preliminary DAG...
+...to define set {S} to describe which confounders you may wish to include in a multivariable model. You may use Daggity, R, Powerpoint, etc., to make your DAG. A clear and legibly hand drawn DAG is also acceptable. (Note: If you chose a randomized trial, please use the DAG to help you describe the confounding structure that will be accounted for via randomization).
+
+### a. Describe/define each individual component in the DAG.
+
+### b. Was it difficult to assess directionality of any of the arrows? What additional information would you like to have
+
+    (Note: The goal is not necessarily to produce a perfect and final DAG, but to help you gain an appreciation of the importance of this step and some of the challenges in DAG creation. You need not do a full literature review to support your DAG, but do use information from the papers identified in part 4 of assignment 1 to help you identify potential confounders and inform your DAG.) 
