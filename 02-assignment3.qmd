@@ -1,0 +1,46 @@
+---
+title: "Selection, sample size, participant burden (Assn. 3)"
+---
+
+Study Design Assignment #3: Preventing selection bias, identifying a source population,
+estimating sample size, and understanding participant burden
+
+Provide a concise but complete response (2-3 pages) to the following questions.
+
+## Re-state your study question and chosen study design. (This is for the benefit of your peer reviewers.)
+
+I am interested in assessing the effect of mobile treatment units for methadone treatment of opioid use disorder. In particular I'm interested in seeing if there are fewer adverse events when they are utilized (death, hospitalization, overdoses). Lastly I am interested in noting any demographic shifts in the people getting treatment when they are used as people in rural areas are not always able to make it to more centralized urban clinics. This could inform holistic treatment policies in that knowing, for example, rural and urban populations get treatment differently.
+
+## Precisely how might selection bias occur in the type of study you are designing (e.g., what causes selection bias in a case-control study)?
+
+This is a cohort study interested in regions. In comparing different regions, these studies carry a risk subjects are counted differently (more on this in the next question). Cohort studies are also vulnerable to any issues that come with a lack of randomization. For example, if you use phone calls to collect participants and call during business hours, you're skewed towards households where one adult might not have to work and that still have a landline (presumably older and more economically secure than the general population).
+
+## Based on your study design and chosen source population, describe any relevant considerations for preventing selection bias in your study (i.e., how might selection bias occur specifically in the study that you have designed?).
+
+One issue with studying drug overdoses is a lot of drug overdoses occur from mixing drugs. If opioids and cocaine are both present in blood samples, for instance, this this could be seen as a incident for those who study either. Some also argue this increases the counts attributed to opioids. If one region in my study had a lot "polydrug" use, as it is know, and those weren't counted, this could impact our findings (the manner in which this would impact the study would depend on which research question). 
+
+## What would be the ideal source population or data source for this study? Why?
+
+The ideal would be data collected and standardized by a public health institute or organization. There would be data from several states and from rural as well as urban settings (though it would likely skew rural as cities are more likely to have centralized clinics in densely populated areas and more access to public transport). The goal would be to keep the study as generalize as possible because the issue is of national, not regional concern. It would also be interesting to see if the mobile units changed the demographics of the people who got treatment. If we only studied majority-white areas this would be difficult.
+
+## Identify and briefly describe 2-3 real data sources (e.g., NHANES, Danish National Registry, etc.) or populations (e.g., patients at DHMC, workers in a specific industry, etc.) that you might target for this study. Which of these seems most useful for your particular study?
+
+Most of the resource that are readily available are from specific CDC programs.
+
+    - [Overdose Data to Action](https://www.cdc.gov/drugoverdose/od2a/index.html), which is concerned with overdoses in general and is particular with risk factors associated with risk.
+
+    - [Youth Risk Behavior Surveillance System](https://www.cdc.gov/healthyyouth/data/yrbs/index.htm) which tracks risky behaviors in young people, including alcohol and drugs.
+    
+    - A study called [Patient retention in mobile and fixed-site methadone maintenance treatment], which was done on data collected via interview [@greenfieldPatientRetentionMobile1996]. This would be the most specific.
+
+The first two would be useful for context and summary stats, but the last is the only one I could find with data on the mobile treatment units. Given the DEA changes took place in the last few years, it's not surprising it's hard to find.
+ 
+## Based on associations observed in prior studies, what is your sense of how large your study will need to be (100, 1000, 10,000, 100,000)? Perform a power or sample size calculation for you study. A helpful module on this topic is available at: http://sphweb.bumc.bu.edu/otlt/mph- modules/bs/bs704_power/BS704_Power_print.html
+
+@greenfieldPatientRetentionMobile1996
+
+## Review Lingler et al. 2015 and the related Perceived Research Burden Assessment tool for a description of direct (e.g., ) and indirect (e.g., inconvenience) burdens potentially experienced by research participants : https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4487419/.Consider both direct risks and indirect burdens, and describe what will be the participant burden for subjects in your study?
+
+## Are there any ethical concerns to consider in working with your population of interest? (Hint: if your study involves human subjects (or their data), then the answer is yes. If you have not completed training in the protection of human subjects, you may wish to briefly familiarize yourself with the NIH policies related to the protection of human subjects: https://grants.nih.gov/policy/humansubjects.htm.) Does your research use vulnerable populations or others requiring special protections (this specifically relates to the following NIH policy: https://grants.nih.gov/policy/humansubjects/policies-and-regulations/vulnerable-populations.htm)?
+
+

@@ -15,6 +15,7 @@ book:
     - index.qmd
     - 00-assignment1.qmd
     - 01-assignment2.qmd
+    - 02-assignment3.qmd
     - references.qmd
 
 bibliography: references.bib

@@ -12,15 +12,7 @@ I am interested in assessing the effect of mobile treatment units for methadone 
 
 ## Based on the papers that you reviewed for Questions 3 & 4 in Exercise 1, list the important potential confounders of your exposure-outcome association. Will any of these be particularly challenging to measure?
 
-```{r}
-
-
-
-```
-
-
-
-
+One variable that's a concern based on my DAG is baseline opioid burden/usage. I think if it's higher the risk is greater to a given person, but it would also probably influence treatment. Thus, I'd need to adjust for it. Socioeconomic status also comes up a lot in the papers, as do race and education levels.
 
 ## How might you integrate prevention or control of confounding into your study design or analysis?
 
@@ -29,8 +21,89 @@ I think for my study it makes sense to focus on controlling in a multivariate an
 ## Based on your answers in part 3 and 4 of Study Design Assignment 1, create a preliminary DAG...
 ...to define set {S} to describe which confounders you may wish to include in a multivariable model. You may use Daggity, R, Powerpoint, etc., to make your DAG. A clear and legibly hand drawn DAG is also acceptable. (Note: If you chose a randomized trial, please use the DAG to help you describe the confounding structure that will be accounted for via randomization).
 
+Let:
+
+ - Age = Age
+
+ - FO = Fatal Overdose
+
+ - O = Opioid use rate of the region
+
+ - Tx = Treatment (Mobile available or not)
+
+ - Edu = Education level
+
+ - Geo = Geographical location/residence
+
+ - Sex = Biological sex
+
+ - SES = Socioeconomic status
+
+ - Emp = Employment 
+
+Most of these should be fairly available depending oh how granular federal overdose data are. I think county-level stats are accessible at this point. 
+
+```{r}
+
+library(ggdag)
+library(ggplot2)
+
+g <- ggdag::dagify(
+    Tx ~ Geo,
+    Tx ~ SES,
+    Tx ~ Emp,
+    Tx ~ O,
+    FO ~ O,
+    SES ~ Emp,
+    Emp ~ Geo,
+    FO ~ Tx,
+    FO ~ Age,
+    FO ~ Sex,
+    SES ~ Sex,
+    O ~ Geo,
+    Emp ~ Edu,
+    SES ~ Edu    
+    
+)
+
+ggdag(g) +
+    theme_minimal()
+```
+
+My set $S$ would thus be $S=\{O, Geo, Emp, Sex, Age\}$
+
+Most of these should be fairly available depending oh how granular federal overdose data are. I think county-level stats are accessible at this point. 
+
+
 ### a. Describe/define each individual component in the DAG.
+
+Let:
+
+ - Age = Age (in years)
+
+ - FO = Fatal Overdose (a death that was ruled to be overdose-related)
+ 
+ - O = Opioid use rate of the region (deaths per time period in the region where the subject is)
+ 
+ - Tx = Treatment (Mobile treatment available or not)
+ 
+ - Edu = Education level (No HS, HS, College, Postgrad)
+ 
+ - Geo = Geographical location/residence (Where the patient lives)
+ 
+ - Sex = Biological sex (the biological sex of the patient)
+ 
+ - SES = Socioeconomic status (Lower, Middle, Upper, bracket of household income)
+ 
+ - Emp = Employment (has the person worked 36+ hour a week for the last 6 months)
 
 ### b. Was it difficult to assess directionality of any of the arrows? What additional information would you like to have
 
-    (Note: The goal is not necessarily to produce a perfect and final DAG, but to help you gain an appreciation of the importance of this step and some of the challenges in DAG creation. You need not do a full literature review to support your DAG, but do use information from the papers identified in part 4 of assignment 1 to help you identify potential confounders and inform your DAG.) 
+    >(Note: The goal is not necessarily to produce a perfect and final DAG,
+    but to help you gain an appreciation of the importance of this step and
+    some of the challenges in DAG creation. You need not do a full literature
+    review to support your DAG, but do use information from the papers identified
+    in part 4 of assignment 1 to help you identify potential confounders and 
+    inform your DAG.)
+
+Yes - I think it's hard to say if race "causes" geography or the other way around since they don't cause one another say but the geographic location of the survey does impact the chances of a given subject being a particular race. Mostly it wa hard to avoid a few bidirectional arrows. 
