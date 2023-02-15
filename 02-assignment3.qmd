@@ -27,20 +27,65 @@ The ideal would be data collected and standardized by a public health institute 
 
 Most of the resource that are readily available are from specific CDC programs.
 
-    - [Overdose Data to Action](https://www.cdc.gov/drugoverdose/od2a/index.html), which is concerned with overdoses in general and is particular with risk factors associated with risk.
+- [Overdose Data to Action](https://www.cdc.gov/drugoverdose/od2a/index.html), which is concerned with overdoses in general and is particular with risk factors associated with risk.
 
-    - [Youth Risk Behavior Surveillance System](https://www.cdc.gov/healthyyouth/data/yrbs/index.htm) which tracks risky behaviors in young people, including alcohol and drugs.
+- [Youth Risk Behavior Surveillance System](https://www.cdc.gov/healthyyouth/data/yrbs/index.htm) which tracks risky behaviors in young people, including alcohol and drugs.
     
-    - A study called [Patient retention in mobile and fixed-site methadone maintenance treatment], which was done on data collected via interview [@greenfieldPatientRetentionMobile1996]. This would be the most specific.
+- A 1996 study, *Patient retention in mobile and fixed-site methadone maintenance treatment*, which was done with data collected via interview [@greenfieldPatientRetentionMobile1996]. This would be the most specific.
 
 The first two would be useful for context and summary stats, but the last is the only one I could find with data on the mobile treatment units. Given the DEA changes took place in the last few years, it's not surprising it's hard to find.
  
 ## Based on associations observed in prior studies, what is your sense of how large your study will need to be (100, 1000, 10,000, 100,000)? Perform a power or sample size calculation for you study. A helpful module on this topic is available at: http://sphweb.bumc.bu.edu/otlt/mph- modules/bs/bs704_power/BS704_Power_print.html
 
-@greenfieldPatientRetentionMobile1996
+The study mentioned above [@greenfieldPatientRetentionMobile1996] had 399 + 1588 = 1987 subjects. I think this would probably be good for mine as well but let's confirm.
+
+### Assuming comparing means
+
+If I ended up using counts of deaths in several regions and wanted to compare average deaths between the van available and unavailable groups, I could go with an ANOVA.
+
+```{r}
+library(pwr)
+
+pwr.anova.test(
+  # standard power 
+  power = 0.8,
+  # vans available yes/no
+  k = 2,
+  # gotta start somewhere
+  n = 20,
+  # standard
+  sig.level = 0.05
+)
+```
+
+I'd be counting on a fairly high effect size with these numbers. Given what they saw in Greenfield, et al[@greenfieldPatientRetentionMobile1996] though, I might be able to get away with it.
+
+### Assuming a hazard ratio approach
+
+Let's also consider a longitudinal approach:
+
+```{r}
+library(survivalpwr)
+
+pwr_coxph(
+  # assuming this effect size as a starting points
+  hr = 1.5,
+  # we'd need to tweak this based on the literature but let's assume
+  # there is something like a 10% probability of overdose
+  eventprob = 0.1,
+  # based on the aforementioned study
+  n = 1987
+)
+```
+
 
 ## Review Lingler et al. 2015 and the related Perceived Research Burden Assessment tool for a description of direct (e.g., ) and indirect (e.g., inconvenience) burdens potentially experienced by research participants : https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4487419/.Consider both direct risks and indirect burdens, and describe what will be the participant burden for subjects in your study?
+
+This study would be difficult to do in a lot of ways, but would be relatively mild in terms of participant burden. We'd mostly be following people who where in treatment to note their status at the end. They would not have to change a behavior, take an experimental drug, etc, thus it would be quite a manageable study from a direct burden standpoint.
+
+One thing that would be a concern is time. They would need to remain in the study for a non-negligible amount of time. This would be an indirect burden.
 
 ## Are there any ethical concerns to consider in working with your population of interest? (Hint: if your study involves human subjects (or their data), then the answer is yes. If you have not completed training in the protection of human subjects, you may wish to briefly familiarize yourself with the NIH policies related to the protection of human subjects: https://grants.nih.gov/policy/humansubjects.htm.) Does your research use vulnerable populations or others requiring special protections (this specifically relates to the following NIH policy: https://grants.nih.gov/policy/humansubjects/policies-and-regulations/vulnerable-populations.htm)?
 
 
+There are, of course, some concerns. The largest is the sensitivity of the data. People who use drugs may face significant stigma. If their identities were compromised, this would be a significant ethical failure of the study. Depending on the details, my study might qualify as involving a vulnerable population. Some opioid research involves people who are incarcerated.
